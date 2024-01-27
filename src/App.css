@@ -1,0 +1,23 @@
+.dark,.dark .toggle {
+  background-color:#0F0F0F;   
+}
+.dark h1, .dark p,.dark a,.dark span{
+   color:white !important;
+}
+.dark .selectedCardDetails a{
+   color:#0F0F0F !important
+}
+.dark .min,.dark .plus{
+  border-color:white !important
+}
+.dark .outlineButton {
+color:#C689C6;
+background-color:#0F0F0F;
+border-color:#C689C6;
+}
+.dark  input{
+  background:#0F0F0F
+}
+.infoDescriptionRow2 span{
+ color:#C689C6 !important
+}

@@ -1,0 +1,27 @@
+.selectedSec{
+    padding: 100px 78px;
+}
+.selectedSec h1{
+    color: var(--Black, #0F0F0F);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 49px; /* 122.5% */
+    text-transform: capitalize;
+}
+.selectedSecCards{
+    padding-top: 46px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    column-gap: 24px;
+    justify-content: center;
+}
+@media screen and (max-width:700px){
+    .selectedSec {
+        padding: 20px;
+      }
+      .selectedSec h1 {
+        font-size: 25px;
+      }
+}

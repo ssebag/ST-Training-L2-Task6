@@ -1,0 +1,154 @@
+.moreInfo{
+    padding: 100px 70px;
+    display: flex;
+    gap: 58px;
+}
+.infoImg{
+    width: 476px;
+}
+.infoImg img{
+    width: 100%;
+}
+.infoDescription {
+    width: 691.247px;
+}
+.moreInfo h1,.infoTitle span, .moreInfo .aboutBook, .moreInfo .des,.infoDescriptionRow2 p{
+    color: var(--Black, #0F0F0F); 
+    font-weight: 400;
+}
+.infoTitle h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 36px; /* 90% */
+}
+.infoTitle span{
+    font-size: 12px;
+    line-height: 27px; /* 225% */
+}
+.aboutBook{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px; /* 133.333% */
+}
+.infoAboutBook .des{
+    text-align: justify;
+    font-size: 14px;
+    line-height: 23px; /* 164.286% */
+}
+.infoNumber{
+    display: flex;
+     gap: 8.19px;
+}
+.infoNumber .num{
+    color: var(--purple-black-body-text, #4F4C57);
+    font-size: 16px;
+    line-height: 24px; /* 150% */
+}
+.moreInfo .min, .moreInfo .plus{
+    cursor: pointer;
+    border-radius:50%;
+    border:1px solid black;
+    width:24.561px;
+    height:24.561px;
+   text-align:center;
+   font-size:18px
+}
+.infoDescriptionRow2 p{
+    font-size: 16px;
+    line-height: 26px; /* 162.5% */
+}
+.infoDescriptionRow2 span{
+    color: var(--violet, #C689C6);
+    font-size: 16px;
+    line-height: 24.033px; /* 150.208% */
+}
+.infoButtons{
+    display: flex;
+    gap: 23.84px;
+}
+.infoButtons button{
+    width: 333.705px;
+    height: 46.713px;
+    justify-content: center;
+    align-items: center;
+}
+.infoDescriptionRow1{
+    padding-bottom: 37.37px;
+    border-bottom: 1px solid #937DC2;
+    gap: 31.14px;
+    display: flex;
+    flex-direction: column;
+}
+.infoDescriptionRow2{
+    padding-top: 37.37px;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+@media screen and (max-width:1000px){
+    .moreInfo {
+        padding: 50px;
+      }
+      .infoImg,.infoDescription{
+        width: 50%;
+      }
+      .infoDescriptionRow1{
+        gap: 10px;
+      }
+      .infoTitle h1{
+        font-size: 20px;
+         line-height: 15px;
+      }
+      .infoTitle span{
+        font-size: 10px;
+        line-height: 10px;
+      }
+      .aboutBook{
+        font-size: 14px;
+        line-height: 18px;
+      }
+      .infoAboutBook .des {
+        font-size: 11px;
+        line-height: 16px;
+      }
+      .infoDescriptionRow2{
+        gap: 10px;
+        padding-top: 20px;
+      }
+      .infoDescriptionRow2 p,.infoDescriptionRow2 span{
+        font-size: 13px;
+      }
+     
+}
+@media screen and (max-width:700px){
+    .moreInfo {
+        flex-direction: column-reverse;
+        gap: 15px;
+        padding: 15px;
+      }
+      .infoImg{
+        margin: 0 auto;
+      }
+      .infoDescription{
+        width: 100%;
+      }
+      .infoDescriptionRow1{
+        padding-bottom: 10px;
+      }
+      .infoButtons{
+        gap: 10px;
+      }
+      .infoButtons button {
+         width: 200px;
+         height: 35px;
+         font-size: 12px;
+         padding: 1px;
+      }
+      .infoDescriptionRow2{
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+}
+
+

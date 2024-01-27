@@ -1,0 +1,108 @@
+.subscribe{
+    padding: 101px 70px 99px 70px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.subscribeLeft{
+    width: 570px; 
+    display: flex;
+    flex-direction: column;
+    gap: 69px; 
+    padding-top: 35px;
+}
+.knowUs{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.formDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.formDiv input {
+    color: rgba(147, 125, 194, 0.60);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.033px;
+    border-bottom: 1.001px solid rgba(147, 125, 194, 0.60);
+    height: 35px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+.formDiv .lineButton{
+    height: 50px;
+    width: 100%;
+}
+.subscribeLeft h1{
+    color: var(--Black, #0F0F0F);
+    font-size: 39px;
+    font-weight: 600;
+    line-height: 49.068px; /* 125.816% */
+}
+.subscribeLeft p{
+    color: var(--Black, #0F0F0F);
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.033px; /* 150.208% */
+}
+.subscribeRight{
+    width: 593px; 
+}
+.subscribeRight iframe{
+    width: 100%;
+    border: none;
+    height: 100%;
+  }
+@media screen and (max-width:1000px){
+    .subscribe {
+        padding: 20px;
+        gap: 20px;
+      }
+      .subscribeLeft{
+        gap: 20px;
+      }
+}
+@media screen and (max-width:1000px) and (min-width:700px){
+      .subscribeRight{
+        width: 50%;
+      }
+}
+@media screen and (max-width:700px){
+    .subscribe{
+        flex-wrap: wrap;
+    }
+    .subscribeRight{
+        margin: 0 auto;
+    }
+    .knowUs {
+        gap: 0px;
+      }
+      .subscribeLeft h1 {
+        font-size: 20px;
+    }
+    .subscribeLeft p {
+        font-size: 12px;
+    }
+    .subscribeRight{
+        width: 80%;
+        height: 200px;
+    
+      }
+    .formDiv input {
+        font-size: 10px;
+    }
+    .formDiv {
+        gap: 8px;
+      }
+      .formDiv .lineButton {
+        height: 29px;
+    }
+    .formDiv .lineButton {
+        font-size: 12px;
+        padding: 0px;
+      }
+}

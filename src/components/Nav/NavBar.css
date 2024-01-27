@@ -32,7 +32,7 @@
  align-items: center;
  cursor:pointer;
 }
-.menu, .clos , .openImg{
+.menu, .clos , .openImg,  .forMobile{
   display: none;
 }
 @media screen and (max-width:1200px){
@@ -44,7 +44,7 @@
   }
 }
 @media screen and (max-width:920px){
-  .moonIcon{
+  .moonIcon,.forWeb{
     display:none;
   }
   .navBar{
@@ -58,7 +58,7 @@
     border-bottom: 1px solid #937DC2;
     width: 100%;
   }
-  .menu,.openImg{
+  .menu,.openImg,.forMobile{
     display: block;
     cursor: pointer;
   }

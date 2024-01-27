@@ -47,7 +47,8 @@ export default function NavBar({change}) {
         </ul>  
         <div className='mode' onClick={Mode}>
           <img className='moonIcon' src={dark   == "true" ? Sun : Moon} />
-          <a>{dark   == "true" ? 'Light mode' : 'Dark mode'}</a>
+          <a className='forWeb'>{dark   == "true" ? 'Light mode' : 'Dark mode'}</a>
+          <a className='forMobile'>Dark mode</a>
          <img className={`openImg ${dark == "true" ? 'rotate' : '' }`} src={OpenImg} />
         </div>  
       </div>

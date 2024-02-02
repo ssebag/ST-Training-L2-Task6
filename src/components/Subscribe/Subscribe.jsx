@@ -1,5 +1,4 @@
 import './Subscribe.css'
-import Mapp from './../../assets/img/subscribe/Map.png'
 import Button from './../Button/Button'
 export default function Subscribe() {
   return (

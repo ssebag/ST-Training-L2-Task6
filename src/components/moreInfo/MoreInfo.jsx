@@ -1,7 +1,5 @@
 import './MoreInfo.css'
 import Button from './../Button/Button'
-import min from './../../assets/img/icons/min.png'
-import plus from './../../assets/img/icons/plus.png'
 import React, {useEffect, useState} from 'react'
 import axios from 'axios'
 import{useParams} from 'react-router-dom'

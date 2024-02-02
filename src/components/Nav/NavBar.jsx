@@ -6,12 +6,13 @@ import Moon from './../../assets/img/icons/moon.png'
 import Sun from './../../assets/img/icons/sun.svg'
 import Clos from './../../assets/img/icons/clos.svg'
 import OpenImg from './../../assets/img/icons/open.png'
-import {Link} from "react-router-dom"
 import React, { useState, useEffect } from "react"
-
+import NavItem from './NavItem'
 export default function NavBar({change}) {
+  // ===================== Hook ============================
   const [open, setOpen] = useState(false)
   const [dark, setDark] = useState(localStorage.getItem("dark") ? localStorage.getItem("dark") : false)
+  // ===================== Handle Functions ================
   const Mode =()=>{
       if(dark == "true"){
        setDark("false"); 
@@ -26,13 +27,7 @@ export default function NavBar({change}) {
   const Toggle =()=>{
    setOpen(!open);
   }
-  let lists=[
-    {list:"Home", link:"/"},
-    {list:"News", link:""},
-    {list:"Promotion of the mount", link:""},
-    {list:"Publishes", link:""},
-    {list:"Subscribe to the newsletter", link:""},
-  ]
+  
   return (
     <div className='navBar'>
       <img className='logo' src={dark == "true" ? DarkLogo : LightLogo}  />
@@ -40,17 +35,24 @@ export default function NavBar({change}) {
 
       <div className={`navMainDiv ${open == true ? 'toggle' : ''} `}>
       <img className='clos' src={Clos} onClick={Toggle} />
-        <ul className='ulNav'>
-          {lists?.map((ele,key)=>{
-            return(<li key={key}><Link to={ele?.link}>{ele?.list}</Link></li>)
-          })}
-        </ul>  
-        <div className='mode' onClick={Mode}>
-          <img className='moonIcon' src={dark   == "true" ? Sun : Moon} />
-          <a className='forWeb'>{dark   == "true" ? 'Light mode' : 'Dark mode'}</a>
+      <NavItem navClass={"nav-items"}/>
+      <div className='mode' onClick={Mode}>
+        { dark =='true' ? (
+          <>
+          <img className='moonIcon' src={Sun} />
+          <a className='forWeb'>Light mode</a>
           <a className='forMobile'>Dark mode</a>
-         <img className={`openImg ${dark == "true" ? 'rotate' : '' }`} src={OpenImg} />
-        </div>  
+          <img className='openImg rotate' src={OpenImg} />
+          </>
+        ) : (
+          <>
+          <img className='moonIcon' src={Moon} />
+          <a className='forWeb'>Dark mode</a>
+          <a className='forMobile'>Dark mode</a>
+          <img className='openImg' src={OpenImg} />
+          </>
+        )}
+       </div> 
       </div>
     </div>
   )

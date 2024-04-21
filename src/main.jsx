@@ -4,7 +4,7 @@ import App from './App.jsx'
 import './index.css'
 import { BrowserRouter } from 'react-router-dom'
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter basename='/ST-L2-Task6'>
+  <BrowserRouter basename='/ST-Training-L2-Task6'>
     <App />
   </BrowserRouter>,
 )
